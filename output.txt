@@ -1,0 +1,27 @@
+if ! [ -e /mirror/scratch/Damien/class/class_FK/build ]; then mkdir /mirror/scratch/Damien/class/class_FK/build ; mkdir /mirror/scratch/Damien/class/class_FK/build/lib; fi;
+touch build/.base
+cd /mirror/scratch/Damien/class/class_FK/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/mirror/scratch/Damien/class/class_FK"' -DHYREC -I../include -I../hyrec -c ../tools/growTable.c -o growTable.o
+cd /mirror/scratch/Damien/class/class_FK/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/mirror/scratch/Damien/class/class_FK"' -DHYREC -I../include -I../hyrec -c ../tools/dei_rkck.c -o dei_rkck.o
+cd /mirror/scratch/Damien/class/class_FK/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/mirror/scratch/Damien/class/class_FK"' -DHYREC -I../include -I../hyrec -c ../tools/sparse.c -o sparse.o
+cd /mirror/scratch/Damien/class/class_FK/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/mirror/scratch/Damien/class/class_FK"' -DHYREC -I../include -I../hyrec -c ../tools/evolver_rkck.c -o evolver_rkck.o
+cd /mirror/scratch/Damien/class/class_FK/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/mirror/scratch/Damien/class/class_FK"' -DHYREC -I../include -I../hyrec -c ../tools/evolver_ndf15.c -o evolver_ndf15.o
+cd /mirror/scratch/Damien/class/class_FK/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/mirror/scratch/Damien/class/class_FK"' -DHYREC -I../include -I../hyrec -c ../tools/arrays.c -o arrays.o
+cd /mirror/scratch/Damien/class/class_FK/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/mirror/scratch/Damien/class/class_FK"' -DHYREC -I../include -I../hyrec -c ../tools/parser.c -o parser.o
+cd /mirror/scratch/Damien/class/class_FK/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/mirror/scratch/Damien/class/class_FK"' -DHYREC -I../include -I../hyrec -c ../tools/quadrature.c -o quadrature.o
+cd /mirror/scratch/Damien/class/class_FK/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/mirror/scratch/Damien/class/class_FK"' -DHYREC -I../include -I../hyrec -c ../tools/hyperspherical.c -o hyperspherical.o
+cd /mirror/scratch/Damien/class/class_FK/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/mirror/scratch/Damien/class/class_FK"' -DHYREC -I../include -I../hyrec -c ../tools/common.c -o common.o
+cd /mirror/scratch/Damien/class/class_FK/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/mirror/scratch/Damien/class/class_FK"' -DHYREC -I../include -I../hyrec -c ../source/input.c -o input.o
+cd /mirror/scratch/Damien/class/class_FK/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/mirror/scratch/Damien/class/class_FK"' -DHYREC -I../include -I../hyrec -c ../source/background.c -o background.o
+cd /mirror/scratch/Damien/class/class_FK/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/mirror/scratch/Damien/class/class_FK"' -DHYREC -I../include -I../hyrec -c ../source/thermodynamics.c -o thermodynamics.o
+cd /mirror/scratch/Damien/class/class_FK/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/mirror/scratch/Damien/class/class_FK"' -DHYREC -I../include -I../hyrec -c ../source/perturbations.c -o perturbations.o
+cd /mirror/scratch/Damien/class/class_FK/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/mirror/scratch/Damien/class/class_FK"' -DHYREC -I../include -I../hyrec -c ../source/primordial.c -o primordial.o
+cd /mirror/scratch/Damien/class/class_FK/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/mirror/scratch/Damien/class/class_FK"' -DHYREC -I../include -I../hyrec -c ../source/nonlinear.c -o nonlinear.o
+cd /mirror/scratch/Damien/class/class_FK/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/mirror/scratch/Damien/class/class_FK"' -DHYREC -I../include -I../hyrec -c ../source/transfer.c -o transfer.o
+cd /mirror/scratch/Damien/class/class_FK/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/mirror/scratch/Damien/class/class_FK"' -DHYREC -I../include -I../hyrec -c ../source/spectra.c -o spectra.o
+cd /mirror/scratch/Damien/class/class_FK/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/mirror/scratch/Damien/class/class_FK"' -DHYREC -I../include -I../hyrec -c ../source/lensing.c -o lensing.o
+cd /mirror/scratch/Damien/class/class_FK/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/mirror/scratch/Damien/class/class_FK"' -DHYREC -I../include -I../hyrec -c ../hyrec/hyrectools.c -o hyrectools.o
+cd /mirror/scratch/Damien/class/class_FK/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/mirror/scratch/Damien/class/class_FK"' -DHYREC -I../include -I../hyrec -c ../hyrec/helium.c -o helium.o
+cd /mirror/scratch/Damien/class/class_FK/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/mirror/scratch/Damien/class/class_FK"' -DHYREC -I../include -I../hyrec -c ../hyrec/hydrogen.c -o hydrogen.o
+cd /mirror/scratch/Damien/class/class_FK/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/mirror/scratch/Damien/class/class_FK"' -DHYREC -I../include -I../hyrec -c ../hyrec/history.c -o history.o
+cd /mirror/scratch/Damien/class/class_FK/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/mirror/scratch/Damien/class/class_FK"' -DHYREC -I../include -I../hyrec -c ../source/output.c -o output.o
+cd /mirror/scratch/Damien/class/class_FK/build;gcc -O4 -ffast-math  -fopenmp -g -fPIC -D__CLASSDIR__='"/mirror/scratch/Damien/class/class_FK"' -DHYREC -I../include -I../hyrec -c ../main/class.c -o class.o
